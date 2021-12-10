@@ -1,0 +1,13 @@
+mydict={'name':'sampath','age':26,'course':{'pyhton','selenium'},'duration':'3 months','role':'automation tester'}
+print(mydict)
+print(type(mydict))
+print(mydict['course'])
+print(type(mydict['course']))
+print(len(mydict))
+print(mydict.get('age'))
+print(mydict.items())
+print(mydict.popitem())
+print(mydict.pop('course'))
+print(mydict.keys())
+print(mydict.values())
+print(mydict)

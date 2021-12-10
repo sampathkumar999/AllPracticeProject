@@ -1,0 +1,16 @@
+s=set()
+s.update({1,2,3,4,5})
+s1=set(range(0,10,2))
+print(s&s1)
+
+print(s|s1)
+print(s-s1)
+print(s.symmetric_difference(s1))
+print(1 in s)
+print(1 in s1)
+print(3 not in s)
+print(5 not in s1)
+
+s2=eval(input('enter list values:'))
+print(list(s2))
+print(set(s2))
