@@ -1,5 +1,4 @@
 import openpyxl
-from selenium import webdriver
 path = 'C:\excel sheets\Book1.xlsx'
 workbook = openpyxl.load_workbook(path)
 sheet = workbook.active

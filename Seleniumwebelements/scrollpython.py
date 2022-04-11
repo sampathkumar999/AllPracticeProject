@@ -9,5 +9,6 @@ driver.execute_script('window.scrollBy(0,1500)','')
 target_element = driver.find_element_by_xpath('/html/body/footer/div[1]/div/a/img')
 time.sleep(3)
 driver.execute_script('arguments[0].scrollIntoView();',target_element)
+driver.quit()
 
 

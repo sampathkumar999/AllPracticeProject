@@ -24,5 +24,7 @@ driver.find_element_by_xpath('//input[@type="submit"]').click()
 confirm = driver.find_element_by_xpath('/html/body/app-root/app-shop/div/app-checkout/div[2]/div').text
 assert 'Success! Thank you!' in confirm
 
+driver.quit()
+
 
 

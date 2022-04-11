@@ -8,12 +8,11 @@ driver = webdriver.Chrome(executable_path= "c:\\Users\\sadguru\\Downloads\\chrom
 driver.get('https://app.hubspot.com/login')
 
 wait = WebDriverWait(driver, 10)
-email_id = wait.until(ec.presence_of_element_located((By.ID,'username')))
+email_id = wait.until(ec.presence_of_element_located((By.ID, 'username')))
 email_id.send_keys('naveen@gmail.com')
-driver.find_element_by_id('password').send_keys('test@123')
+driver.find_element(By.ID, 'password').send_keys('test@123')
 wait = WebDriverWait(driver, 10)
-login = wait.until(ec.element_to_be_clickable((By.ID,'password-login-button')))
+login = wait.until(ec.element_to_be_clickable((By.ID, 'loginBtn')))
 login.click()
 
 
-#driver.find_element_by_name('').click()
