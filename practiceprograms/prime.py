@@ -1,11 +1,7 @@
-num=int(input('enter a number: '))
+rows = int(input())
 
-count=0
-for i in range(1,num+1):
-    if (num%i)==0:
-        count=count+1
+for i in range(1,rows+1):
+    print(' '*(rows-i), end = '')
+    print('* '*i)
 
-if count==2:
-    print('the no. is a prime')
-else:
-    print('the no. is not prime')
+

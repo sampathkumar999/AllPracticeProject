@@ -1,0 +1,8 @@
+str1 = input('enter  string1:')
+str2 = input('enter string2:')
+s1 = set(str1)
+s2 = set(str2)
+s3 = s1.difference(s2)
+s4 = s2.difference(s1)
+print(''.join(s3))
+print(''.join(s4))
